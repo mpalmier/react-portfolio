@@ -1,0 +1,18 @@
+@import 'variables';
+
+.emoji {
+	width: 100px;
+	height: 100px;
+	padding: 23px 18px;
+	background-color: $emoji;
+	border-radius: 50%;
+	position: relative;
+	margin-bottom: 25px;
+	img {
+		width: inherit;
+		position: absolute;
+		top: 50%;
+		display: block;
+		transform: translateY(-50%);
+	}
+}

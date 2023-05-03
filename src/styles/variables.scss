@@ -5,6 +5,7 @@ $green: #34D399;
 $blue: #38BDF8;
 $orange: #F59E0B;
 $rose: #F43F5E;
+$emoji: #EFFFFA;
 
 // Gris
 $gray-100: #E1E1E6;
@@ -22,8 +23,15 @@ $font-size-extra-large: 16px;
 $font-size-large: 15px;
 $font-size-base: 14px;
 
+// Font style
+$bold: 600;
+$regular: 500;
+$thin: 400;
+$heading: 'Nunito';
+
 // Breakpoint
 $lg: 1200px;
 $md: 992px;
 $sm: 780px;
 $border-radius: 44px;
+
