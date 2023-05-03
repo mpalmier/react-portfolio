@@ -1,0 +1,64 @@
+@import "variables";
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-size: 14px;
+	font-family: 'Poppins';
+}
+
+.container {
+	padding: 0 90px;
+	@media screen and (max-width: $md) {
+		padding: 0 24px;
+	}
+}
+
+.btn-primary {
+	padding: 8px 36px;
+	background-color: $primary;
+	border-radius: 32px;
+	color: $secondary;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		background: $secondary;
+		color: $primary;
+	}
+}
+
+.btn-link {
+	color: $primary;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	display: flex;
+    &:after {
+	    content: '';
+	    background: url("../assets/arrow.png") no-repeat center;
+	    width: 20px;
+	    height: 20px;
+	    display: block;
+	    margin-left: 6px;
+	    transition: all 0.3s ease-in-out;
+
+    }
+	&:hover:after {
+		animation: animateArow 1s infinite
+	}
+}
+
+@keyframes animateArow {
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(5px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
