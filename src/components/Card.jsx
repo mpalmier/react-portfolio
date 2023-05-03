@@ -6,8 +6,8 @@ const Card = () => {
 	return (
 		<section className="card">
 			<Emoji/>
-			<span className="subtitle">Olá, eu sou o Alê 🤙</span>
-			<span className="title">Desenvolvo <span className="highlight">ideias</span> e ajudo a construir um mundo melhor através do software.</span>
+			<span className="subtitle">Bonjour, je suis Mathéo 🤙</span>
+			<span className="title">Je <span className="highlight">développe</span> des idées et aide à construire un monde meilleur grâce aux logiciels.</span>
 			<div className="card-buttons">
 				<Button text={"Contact"} href={"#"} class={"btn-primary"}/>
 				<Button text={"Télécharger mon CV"} href={"#"} class={"btn-link"}/>
