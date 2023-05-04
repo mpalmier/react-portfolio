@@ -1,0 +1,16 @@
+@import "variables";
+
+.projects {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	margin-top: 150px;
+	gap: 20px;
+	h2 {
+		margin: 0;
+		width: 0;
+		padding-bottom: 80px;
+		font-size: 92px;
+		grid-column: 1/4;
+	}
+
+}

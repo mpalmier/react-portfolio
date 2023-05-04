@@ -1,0 +1,28 @@
+@import "variables";
+
+.card-project {
+	h3 {
+		margin: 0;
+		padding-bottom: 20px;
+		font-size: 38px;
+	}
+	.project-image {
+		padding: 10px;
+		border-radius: 18px;
+		margin-bottom: 20px;
+		text-align: center;
+		&.red {
+			background-color: $red;
+		}
+		&.green {
+			background-color: $greenproject;
+		}
+		&.orange {
+			background-color: $orangeproject;
+		}
+	}
+	.projects-links {
+		display: flex;
+		gap: 20px;
+	}
+}

@@ -1,5 +1,6 @@
 import Header from "./components/Header.jsx";
 import Card from "./components/Card.jsx";
+import Projects from "./components/Projects.jsx";
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
 			<Header/>
 			<div className="container">
 				<Card/>
+				<Projects/>
 			</div>
 		</>
 	)

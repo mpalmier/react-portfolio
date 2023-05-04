@@ -1,0 +1,22 @@
+@import "variables";
+
+.taglist {
+	display: flex;
+	gap: 10Px;
+	.tag {
+		padding: 8px 16px;
+		margin-bottom: 20px;
+		border-radius: 50px;
+		color: $secondary;
+		font-weight: $thin;
+		&.blue {
+			background-color: $blue;
+		}
+		&.yellow {
+			background-color: $yellow;
+		}
+		&.green {
+			background-color: $greentag;
+		}
+	}
+}
