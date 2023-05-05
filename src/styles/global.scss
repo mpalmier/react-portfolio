@@ -87,13 +87,21 @@ body {
 
 
 h2, .h2 {
-	margin: 0;
 	width: 0;
 	padding-bottom: 80px;
 	font-size: 92px;
 	grid-column: 1/4;
 	font-weight: $bold;
-	margin-top: 150px;
+	margin: 150px 0 0 0;
+	position: relative;
+}
+
+h3, .h3 {
+	padding-bottom: 32px;
+	font-size: 52px;
+	grid-column: 1/4;
+	font-weight: $bold;
+	margin: 46px 0 0 0;
 	position: relative;
 }
 

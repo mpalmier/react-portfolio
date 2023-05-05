@@ -1,0 +1,59 @@
+@import "variables";
+
+.description {
+	display: flex;
+	justify-content: space-between;
+	.left-content {
+		display: flex;
+		flex-direction: column;
+		.text {
+			display: block;
+			position: relative;
+			padding-left: 20px;
+			font-size: 24px;
+			width: 80%;
+			height: fit-content;
+			&:before {
+				content:'';
+				height: 100%;
+				left: 0;
+				position: absolute;
+				border-left: 5px $primary solid;
+				border-radius: 5px;
+				display: block;
+			}
+			span {
+				display: block;
+				margin-top: 20px;
+			}
+		}
+
+		.logos {
+			display: flex;
+			gap: 60px;
+			.card-logo {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+				text-align: center;
+				font-size: 28px;
+				.logo {
+					text-align: center;
+					width: fit-content;
+					padding: 24px 20px 18px;
+					border-radius: 30px;
+					width: 90px;
+					height: 90px;
+					img {
+						width: fit-content;
+					}
+				}
+			}
+		}
+	}
+
+
+	img {
+		width: 40%;
+	}
+}
