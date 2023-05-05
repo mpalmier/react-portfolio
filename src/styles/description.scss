@@ -46,6 +46,9 @@
 					height: 90px;
 					img {
 						width: fit-content;
+						&.react {
+							animation: react 30s linear infinite;
+						}
 					}
 				}
 			}
