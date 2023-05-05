@@ -26,6 +26,7 @@ body {
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
+
 	&::before {
 		content: '';
 		width: 100%;
@@ -37,9 +38,11 @@ body {
 		z-index: -1;
 		background: $secondary;
 	}
+
 	&:hover {
 		color: $primary;
 		background: $secondary;
+
 		&::before {
 			left: 0;
 			transition: all 0.3s ease-in-out;
@@ -52,18 +55,66 @@ body {
 	text-decoration: none;
 	transition: all 0.3s ease-in-out;
 	display: flex;
-    &:after {
-	    content: '';
-	    background: url("../assets/arrow.png") no-repeat center;
-	    width: 20px;
-	    height: 20px;
-	    display: block;
-	    margin-left: 6px;
-	    transition: all 0.3s ease-in-out;
 
-    }
+	&:after {
+		content: '';
+		background: url("../assets/arrow.png") no-repeat center;
+		width: 20px;
+		height: 20px;
+		display: block;
+		margin-left: 6px;
+		transition: all 0.3s ease-in-out;
+	}
+
+	&.github {
+		&:after {
+			background: url("../assets/github.png") no-repeat center;
+			background-size: contain;
+		}
+	}
+
+	&.deploy {
+		&:after {
+			background: url("../assets/deploy.png") no-repeat center;
+			background-size: contain;
+		}
+	}
+
 	&:hover:after {
 		animation: animateArow 1s infinite
+	}
+}
+
+
+h2, .h2 {
+	margin: 0;
+	width: 0;
+	padding-bottom: 80px;
+	font-size: 92px;
+	grid-column: 1/4;
+	font-weight: $bold;
+	margin-top: 150px;
+	position: relative;
+}
+
+.titlearrow {
+	width: fit-content;
+	max-width: 250px;
+	z-index: 1;
+	&:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		z-index: -1 ;
+		background: url("../assets/titlearrow.svg") no-repeat center;
+		background-size: contain;
+		width: 100%;
+		height: 100px;
+		display: block;
+		margin-left: 6px;
+		transition: all 0.3s ease-in-out;
+		transform: translateY(-50%);
 	}
 }
 
@@ -78,6 +129,7 @@ body {
 		transform: translateX(0);
 	}
 }
+
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');

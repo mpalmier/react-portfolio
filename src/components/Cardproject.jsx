@@ -15,8 +15,8 @@ const Cardproject = (props) => {
 			</div>
 			<div className={"project-image "+color}><img src={image} alt={nom}/></div>
 			<div className="projects-links">
-				<Button text="Github" href={github_link} class={"btn-link"}/>
-				<Button text="Démo" href={deploy_link} class={"btn-link"}/>
+				<Button text="Github" href={github_link} class={"btn-link github"}/>
+				<Button text="Démo" href={deploy_link} class={"btn-link deploy"}/>
 			</div>
 
 		</div>
